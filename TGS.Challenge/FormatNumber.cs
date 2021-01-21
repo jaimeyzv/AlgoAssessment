@@ -26,7 +26,7 @@ namespace TGS.Challenge
     {
         public string Format(int value)
         {
-            if (value < 1 || value > 1000000000)
+            if (value < 0 || value >= 1000000000)
                 throw new ArgumentOutOfRangeException();
 
             var array = value.ToString().ToCharArray();
